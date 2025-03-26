@@ -1,0 +1,191 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* Section Héro */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cce7ff;
+    padding: 50px 10%;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    color: #003366;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 10px;
+    max-width: 600px;
+  }
+  
+  .translate-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .translate-btn:hover {
+    background: #002244;
+  }
+  
+  .hero-image {
+    width: 300px;
+  }
+  
+.detailed-features {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 10%;
+}
+
+.feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.feature-text h2 {
+  font-size: 26px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+
+.feature-text p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.feature-image {
+  flex: 1;
+  text-align: center;
+}
+
+.feature-image img {
+  width: 50%;
+  max-width: 280px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-image img:hover {
+  transform: scale(1.1);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 3rem 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .feature-section {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 919px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .feature-section,
+  .feature-section.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .feature-text {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .feature-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .feature-image img {
+    max-width: 300px;
+  }
+
+  .icon-box h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .translate-btn {
+    width: 100%;
+  }
+
+  .feature-image img {
+    max-width: 250px;
+  }
+}

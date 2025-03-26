@@ -1,0 +1,136 @@
+.translator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.translator-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.translator-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.translator-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #555;
+    width: 48%;
+}
+
+.exchange-icon {
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.exchange-icon:hover {
+    transform: rotate(180deg);
+    color: #007bff;
+}
+
+.translator-textareas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.translator-textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    color: #333;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.input-text {
+    background-color: #fafafa;
+}
+
+.output-text {
+    background-color: #e6f0ff;
+    font-weight: 500;
+}
+
+.translator-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.translator-button:hover {
+    background-color: #0056b3;
+}
+
+.translator-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+    transform: scale(1.1);
+}
+
+.history-icon,
+.favoris-icon {
+    font-size: 2rem;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.history-icon:hover,
+.favoris-icon:hover {
+    color: #0056b3;
+}

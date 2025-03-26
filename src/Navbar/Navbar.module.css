@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(25, 21, 110);
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: #002244;
+  }	
+  
+  /* navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 70px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* logo  */
+  .logo {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .navMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex: 1;
+    margin: 0 40px;
+  }
+  
+  .authButtons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: auto;
+    flex: 0 0 auto;
+  }
+
+.signIn, .signUp {
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signIn {
+  background: transparent;
+  border: 2px solid #002244;
+  color: #002244;
+}
+
+.signIn:hover {
+  background-color: aliceblue;
+  border: solid #002244 2px;
+}
+
+.signUp {
+  background: #002244;
+  border: solid #002244 2px;
+  color: white;
+}
+
+.signUp:hover {
+  background: #22384f;
+  color: white;
+  border: solid #002244 2px;
+}
+
+.navLink {
+  position: relative;
+  text-decoration: none;
+  color: rgb(25, 21, 110);
+  font-size: 18px;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, rgb(25, 21, 110), #002244);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #002244;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: #002244;
+}
+
+.mobileAuth {
+  display: none;
+}
+
+@media screen and (max-width: 919px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navMenu {
+    position: fixed;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2rem;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.navMenu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+.navMenu li {
+    margin: 0.5rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.navMenu.active li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navMenu li:nth-child(1) { transition-delay: 0.1s; }
+.navMenu li:nth-child(2) { transition-delay: 0.2s; }
+.navMenu li:nth-child(3) { transition-delay: 0.3s; }
+.navMenu li:nth-child(4) { transition-delay: 0.4s; }
+
+.mobileAuth {
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease 0.5s;
+}
+
+.navMenu.active .mobileAuth {
+    opacity: 1;
+    transform: translateY(0);
+}
+  .authButtons {
+    display: none;
+  }
+
+  .mobileAuth {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .mobileAuth button {
+    width: 100%;
+  }
+}
+.logout {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+.username {
+  font-size: 1.4rem;
+  margin-right: 20px;
+  font-weight: bold;
+}
