@@ -1,6 +1,8 @@
 # 🌍 TraductionApp
 
-Une application de traduction moderne et complète pour briser les barrières linguistiques. Elle vous permet de traduire du texte, de la voix et des images en temps réel, avec gestion des historiques et favoris pour chaque utilisateur.
+**TraductionApp** est une application de traduction moderne et complète pour briser les barrières linguistiques. Elle permet de traduire du texte, de la voix et des images en temps réel, avec gestion des historiques et favoris pour chaque utilisateur.
+
+---
 
 ## 🚀 Fonctionnalités
 
@@ -19,30 +21,50 @@ Une application de traduction moderne et complète pour briser les barrières li
 - ❤️ **Favoris**  
   Ajoutez les traductions importantes à vos favoris pour les retrouver facilement.
 
-## 🖼️ Aperçu
+---
 
-| Accueil                        | Traduction Texte               | Traduction Vocale              |
-|-------------------------------|--------------------------------|-------------------------------|
-| ![](screenshots/home.png)     | ![](screenshots/traduction-texte.png) | ![](screenshots/traduction-vocale.png) |
+## 🖼️ Aperçu de l'application
 
-| Traduction Image              | Historique                     | Favoris                        |
-|------------------------------|--------------------------------|-------------------------------|
-| ![](screenshots/traduction-image.png) | ![](screenshots/history.png)       | ![](screenshots/favoris.png)       |
+### Accueil  
+![Accueil](./screenshots/home.png)
 
-## 🧠 Technologies
+### Traduction Texte à Texte  
+![Texte](./screenshots/traduction-texte.png)
 
-- **React** pour l'interface utilisateur  
-- **Firebase** pour l'authentification, la base de données et l’hébergement  
-- **Tailwind CSS** pour un design responsive  
-- **OCR/API** pour la traduction d’images
+### Traduction Vocale  
+![Vocale](./screenshots/traduction-vocale.png)
+
+### Traduction d’image  
+![Image](./screenshots/traduction-image.png)
+
+### Historique  
+![Historique](./screenshots/history.png)
+
+### Favoris  
+![Favoris](./screenshots/favoris.png)
+
+---
+
+## 🧠 Technologies utilisées
+
+- **React** – Interface utilisateur dynamique  
+- **Firebase** – Authentification, base de données et hébergement  
+- **Tailwind CSS** – Design responsive  
+- **OCR/API** – Pour la traduction d’images
+
+---
 
 ## 🔐 Authentification
 
 Connexion obligatoire pour accéder aux favoris et à l’historique, avec stockage sécurisé via Firebase.
 
+---
+
 ## 📅 Date de finalisation
 
 🗓️ **26 mars 2025**
+
+---
 
 ## 🧑‍💻 Auteur
 
